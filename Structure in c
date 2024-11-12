@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+struct student
+{
+    char name[85];
+    int age;
+    int roll_number;
+    int class;
+    char section;
+    char fav_game[25];
+};
+int main()
+{
+    struct student s1;
+    strcpy(s1.name, "Dhananjay tripathi");
+    s1.age = 15;
+    s1.roll_number = 38;
+    s1.class = 11;
+    s1.section = 'D';
+    strcpy(s1.fav_game, "cricket");
+
+    printf("The name of s1 is %s\n", s1.name);
+    printf("The age of s1 is %d\n", s1.age);
+    printf("The roll_number of s1 is %d\n", s1.roll_number);
+    printf("The class of s1 is %d\n", s1.class);
+    printf("The section of s1 is %c\n", s1.section);
+    printf("The fav_game of s1 is %s\n", s1.fav_game);
+
+    return 0;
+}
